@@ -1,34 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>youtube-clone</title>
-  <link rel="stylesheet" href="finish.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-  <div class="youtube">
-       <div class="search-box"><input type="text" placeholder="search"  class="search-input">
-          <button class="search-btn"><span class="material-icons">search</span></button>
-      
-    
-  </div>
-     </div>
+  <!DOCTYPE html>
+  <html lang="en">
 
-<div class="sidebar-item">
-<button class="shorts-btn"><svg width="34" height="34" viewBox="0 0 27 24" class="shorts-icon">
-        <path  class="short-body" fill-rule="evenodd" d="M17.77 10.32c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-1.05 2.52-3.4 1.47-5.24s-3.4-2.52-5.24-1.47L5 7.54C3.3 8.53 2.22 10.3 2.1 12.25c-.12 1.95.83 3.84 2.54 4.81l1.16.66l-1.16.66c-1.84 1.05-2.52 3.4-1.47 5.24s3.4 2.52 5.24 1.47l9.23-5.29c1.71-.98 2.78-2.76 2.91-4.71c.13-1.94-.83-3.83-2.54-4.8Z" />
-      <path class="short-play" fill-rule="evenodd" d="M10 14.65v-5.3L15 12l-5 2.65 Z" />
-      </svg></button> 
-    
-</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube-clone</title>
+    <link rel="stylesheet" href="finish.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="search-system">
+      <div class="search-bar">
+        <div class="search-btn" >
+          <input type="text" placeholder="search" class="search-input">
+          <button class="search-icon"><span class="material-icons">search</span><span class="search-text">Search</span></button>
+          <button class="mic-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path class="mic-icon" d="M12 14c1.66 0 3-1.34 3-3V7c0-1.66-1.34-3-3-3S9 5.34 9 7v4c0 1.66 1.34 3 3 3z"
+                fill="black" />
+              <path class="mic-stand"
+                d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"
+                fill="black" />
+            </svg> <span class="mic-text">Search with your voice </span>
+          </button>
+      <button class="creat-btn"><span class="creat-text">+</span><span class="creat-sign">Create</span></button>
+        </div>
+      </div>
+    </header>
+    <div class="home-btns">
+      <div class="buttons-icons">
+        <button class="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path class="menu-body" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="black" />
+          </svg>
+        </button>
+        <button class="home-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path class="home-body" d="M12 3L4 10v11h16V10l-8-7z" fill="black" />
+            <path class="home-door" d="M10 21v-6h4v6h-4z" fill="white" />
+          </svg>
+        </button>
+        <button class="shorts-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 24" width="24" height="24">
+            <path class="short-body" fill="black" fill-rule="evenodd"
+              d="M17.77 10.32c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-1.05 2.52-3.4 1.47-5.24s-3.4-2.52-5.24-1.47L5 7.54C3.3 8.53 2.22 10.3 2.1 12.25c-.12 1.95.83 3.84 2.54 4.81l1.16.66l-1.16.66c-1.84 1.05-2.52 3.4-1.47 5.24s3.4 2.52 5.24 1.47l9.23-5.29c1.71-.98 2.78-2.76 2.91-4.71c.13-1.94-.83-3.83-2.54-4.8Z" />
+            <path class="short-play" fill="white" fill-rule="evenodd" d="M10 14.65v-5.3L15 12l-5 2.65 Z" />
+          </svg>
+          <span class="short-text">Shorts</span>
+        </button>
+        <button class="subcribtion-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path class="sub-body" d="M18.7 3.3H5.3v1h13.4v-1zm2 3H3.3v1h17.4v-1zM2 9.3v11.4h20V9.3H2z" fill="black" />
+            <path class="sub-play" d="M10 17.5l5-3-5-3v6z" fill="white" />
+          </svg>
+        </button>
+        <button class="you-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path class="you-body" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="black" />
+            <path class="you-figure"
+              d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 13c-2.67 0-5-1.33-6-3.33.03-2 4-3.09 6-3.09s5.97 1.09 6 3.09c-1 2-3.33 3.33-6 3.33z"
+              fill="white" />
 
 
 
 
-    </body>
+          </svg>
+        </button>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
 </html>
