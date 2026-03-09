@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.search-system {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 56px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 720px;
+  margin-left: 40px;
+
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-icon {
+  width: 64px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 0 20px 20px 0;
+  border-left: none;
+  cursor: pointer;
+}
+
+.side-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.search-text,
+.mic-text,
+.creat-sign,
+.notifi-text {
+  display: none;
+}
+
+.mic-btn {
+  background-color: #f8f8f8;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.mic-btn:hover {
+  background-color: #d4d4d4;
+  transition: all 0.3s ease;
+
+}
+
+.creat-btn {
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creat-btn:hover {
+  background-color: #d4d4d4;
+  transition: all 0.3s ease;
+
+}
+
+.creat-text {
+  font-size: 1;
+
+}
+
+.creat-text::before {
+  content: "+";
+  font-size: 20px;
+  color: #030303;
+  font-weight: 300;
+  padding-right: 10px;
+}.notifi-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f2f2f2;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+cursor: pointer;
+border:none;
+position:relative;
+}
+.notifi-btn:hover{
+  background-color: #d4d4d4;
+  transition: all 0.3s ease
+  
+
+}.notifi-count{
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  line-height: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.home-btns {
+  width: 72px;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;           
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;      
+  border-right: 1px solid #e5e5e5; 
+}
+
+
+.menu-btn {
+  height: 56px;      
+  width: 74%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  background-color: #f2f2f2;
+  border-radius: 100%; 
+}
+
+
+.buttons-icons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;         
+  margin-top: 4px;
+}
+
+.buttons-icons button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.search-system {
+  padding-left: 80px;
+}
