@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: rgb(84, 131, 116);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.bank-ka-paisa{
+    background-color: rgb(141, 186, 187);
+margin-top: 200px;
+display: flex;
+flex-direction: column;
+box-shadow: 0px 5px 6px black;
+border-radius: 10px;
+padding: 10px;
+}.amountint{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+background-color: #161c1b;
+color: white;
+box-shadow: 0px 4px 4px rgb(153, 220, 217);
+}.pay-btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+box-shadow: 0px 4px 4px black;
+cursor: pointer;
+background-color: rgb(42, 154, 118);
+
+}.pay-cl{
+    color: rgb(255, 255, 255);
+   
+
+    
+}.akib-balance{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+background-color: #161c1b;
+color: white;
+
+}.akib-balanc{
+    color: rgb(255, 255, 255);
+}
+.amountint:focus{
+    outline: none;
+}
+
+
+
+    
