@@ -1,34 +1,34 @@
+// DOM Elements ko const mein rakho (kyun ki inki memory location change nahi hogi)
+const loginBtn = document.getElementById("login-btn");
+const cardOut = document.getElementById("output1");
+const header = document.getElementById("page-head1");
+const errorTxt = document.getElementById("hiddin1");
+const retryBtn = document.getElementById("rety-btn");
 
-let loginbtn = document.getElementById("login-btn");
-let cardout = document.getElementById("output1");
-let Header = document.getElementById("page-head1");
+// Logic ko function mein separate karo (Modular Approach)
+const validateUser = (user, pass) => {
+    return pass.length > 8 && user.length > 5;
+};
 
+// Maan lo localStorage mein ek user hai: {name: "Akib123", pass: "password786"}
 
 loginbtn.addEventListener("click", function () {
-    if (cheklogin() === true) {
+    let inputUser = document.getElementById("username").value;
+    let inputPass = document.getElementById("password").value;
+
+    // LocalStorage ke array mein us user ko dhundo
+    let userFound = registeruser.find(u => u.username === inputUser && u.password === inputPass);
+
+    if (userFound) {
+        // Agar match mil gaya toh login success
         cardout.style.display = "block";
         Header.style.display = "none";
-cardout.innerHTML = "<h1>Welcome " + username.value + ",hogaya page load</h1>";
+    } else {
+        // Agar match nahi mila toh error
+        alert("User nahi mila! Pehle register karo.");
     }
-
-
-
 });
-
-
-
-
-function cheklogin() {
-    let password = document.getElementById("password").value;
-    let username = document.getElementById("username").value;
-
-
-    if (password.length > 8 && username.length > 5) {
-     return true;
-
-    }
-    else {
-        alert("password must be more than 8 characters and username must be more than 5 characters");
-        return false;
-    }
-} 
+retryBtn.addEventListener("click", () => {
+    errorTxt.style.display = "none";
+    header.style.display = "flex";
+});

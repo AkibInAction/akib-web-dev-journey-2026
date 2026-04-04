@@ -21,4 +21,25 @@ flex-direction: column;
 
 
 
+}.hiddin1{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}.hiddin1 h5{
+    color: green;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}.hiddin1 .rety{
+
+ box-shadow: 0 0 10px green;
+ display: flex;
+    justify-content: center;
+align-items: center;
+border-radius: 10px 10px 10px 10px;
+
+
+
 }
